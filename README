@@ -2,13 +2,12 @@
 Para rodar o jogo 'Forever Alone Klondike' são necessários os seguintes pacotes:
 	allegro-5.0.4
 	sqlite3
-(que estão disponíveis na pasta 'required')
 
 == COMPILAR ==
-Com o allegro-5.0.4 e o sqlite3:
+Com o allegro-5.0.4 e o sqlite3 pré-instalados:
 gcc -lsqlite3 -lm -lallegro -lallegro_image -lallegro_primitives -lallegro_font -lallegro_ttf src/*.c -o foreveralone
 
-Compilando o allegro-5.0.4 e o sqlite3 juntamente:
+Compilando o allegro-5.0.4 e o sqlite3 em uma pasta "required":
 tar -zxvf required/allegro-*.tar.gz
 unzip required/sqlite-*.zip
 cd allegro-*
